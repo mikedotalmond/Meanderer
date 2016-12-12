@@ -1,0 +1,31 @@
+# Meanderer PhantomJS client
+
+-lib phantomjs
+
+-cp src
+-main meanderer.Main
+
+-dce full
+-js bin/meanderer.js
+
+
+
+--next
+# Meanderer Runner Python
+
+-cp src
+-main runner.Main
+
+-dce full
+-python runner.py
+
+
+
+#--next
+# Meanderer Runner C++
+
+#-cp src
+#-main runner.Main
+
+#-dce full
+#-cpp bin/runner

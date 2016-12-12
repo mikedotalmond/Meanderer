@@ -1,0 +1,45 @@
+{
+	"meandererCount": 1,
+	"interval": { "min": 2, "max": 30 },
+	"loadStallTimeout": 120,
+	"logging": {
+		"enabled": true,
+		"location": "logs"
+	},
+	"capture": {
+		"enabled": true,
+		"location": "captures",
+		"options": { "format":"jpg", "quality":80 },
+		"viewport": { "width": 1920, "height": 1080 }
+	},
+	"userAgentsFile": "config/userAgents.txt",
+	"dictionaryFile": "config/dictionary.json",
+	"search": {
+		"queryWords":{"min":1, "max":3},
+		"offsetRange":{"min":0, "max":256},
+		"urls":[
+			"https://searx.me/?q=::query::&pageno=::offset::",
+			"https://duckduckgo.com/?q=::query::",
+			"https://encrypted.google.com/#q=::query::&start=::offset::",
+			"https://bing.com/search?q=::query::&first=::offset::"
+		]
+	},
+	"allowedExtensions": ["html", "htm", "shtml", "php", "cfm", "cgi", "asp", "aspx", "jsp"],
+	"ignoreLinksContaining": [
+		"searx",
+		"google.com",
+		"duckduckgo.com",
+		"bing.com",
+		"go.microsoft.com",
+		"facebook.com",
+		"twitter.com",
+		"dailymail",
+		"linkedin",
+		"pinterest",
+		"advertise.",
+		"/register",
+		"/about",
+		"/signin",
+		"/subscribe"
+	]
+}

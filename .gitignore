@@ -1,0 +1,6 @@
+/bin/*.map
+/logs
+/captures
+*.png
+*.jpg
+/bin/runner
